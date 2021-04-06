@@ -7,6 +7,6 @@ import java.util.Map;
 @Component
 public interface TestMapper {
 
-    Map<String,Integer> testQueryId(Integer id);
+    Map<String, Object> testQueryId(Integer id);
 
 }

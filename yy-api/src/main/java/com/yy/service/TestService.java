@@ -7,6 +7,6 @@ import java.util.Map;
  */
 public interface TestService {
 
-    Map<String,Integer> test(Integer id);
+    Map<String, Object> test(Integer id);
 
 }

@@ -14,7 +14,7 @@ public class TestImpl implements TestService {
     private TestMapper testMapper;
 
     @Override
-    public Map<String,Integer> test(Integer id) {
+    public Map<String, Object> test(Integer id) {
         return testMapper.testQueryId(id);
     }
 

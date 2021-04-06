@@ -1,14 +1,21 @@
 package com.yy;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import static com.yy.ResultCode.FAILURE;
 import static com.yy.ResultCode.SUCCESS;
 
+@ApiModel(value = "返回说明")
 public class Result<T> {
 
+    @ApiModelProperty(value = "状态码：200:成功，201:失败")
     private int code;
 
+    @ApiModelProperty(value = "描述信息")
     private String msg;
 
+    @ApiModelProperty(value = "返回数据")
     private T data;
 
     public Result() {
