@@ -1,12 +1,12 @@
 package com.yy.service;
 
-import java.util.Map;
+import com.yy.resp.TestEntity;
 
 /**
  * @author Administrator
  */
 public interface TestService {
 
-    Map<String, Object> test(Integer id);
+    TestEntity test(Integer id);
 
 }

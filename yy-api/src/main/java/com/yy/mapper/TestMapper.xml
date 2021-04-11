@@ -2,7 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yy.mapper.TestMapper">
 
-    <select id="testQueryId" parameterType="int" resultType="java.util.Map">
+    <resultMap id="BaseResultMap" type="com.yy.resp.TestEntity">
+        <result column="id" property="id" />
+    </resultMap>
+
+    <select id="testQueryId" resultType="com.yy.resp.TestEntity">
         SELECT * FROM test WHERE id = #{id}
     </select>
 

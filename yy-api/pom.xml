@@ -20,13 +20,11 @@
             <groupId>com.springboot.project</groupId>
             <artifactId>yy-entity</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.2.3.RELEASE</version>
-            <scope>compile</scope>
+            <version>${spring-web.version}</version>
         </dependency>
 
     </dependencies>
@@ -38,7 +36,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.3.0.RELEASE</version>
+                <version>${spring-boot-maven-plugin.version}</version>
             </plugin>
         </plugins>
 

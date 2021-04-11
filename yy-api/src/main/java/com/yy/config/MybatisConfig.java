@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Configuration;
 @MapperScan("com.yy.mapper")
 public class MybatisConfig {
 
+    /**
+     * 解决启动找不到mapper警告
+     */
     @Mapper
     public interface NoWarnMapper {
     }

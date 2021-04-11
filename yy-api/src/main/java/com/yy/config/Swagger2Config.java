@@ -20,6 +20,11 @@ import java.util.List;
 public class Swagger2Config {
 
     /**
+     * 原生UI风格路径：http://localhost:9099/swagger-ui.html
+     * knife4j UI风格路径：http://localhost:9099/doc.html#/home
+     */
+
+    /**
      * 创建API
      */
     @Bean
