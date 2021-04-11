@@ -9,34 +9,50 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.yy.api</groupId>
     <artifactId>yy-api</artifactId>
+    <name>yy-api</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <dependencies>
+        <!-- 自身model依赖开始 -->
         <dependency>
-            <groupId>com.springboot.project</groupId>
-            <artifactId>yy-util</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.springboot.project</groupId>
+            <groupId>com.yy.entity</groupId>
             <artifactId>yy-entity</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring-web.version}</version>
+            <groupId>com.yy.util</groupId>
+            <artifactId>yy-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
-
+        <!-- 自身model依赖结束 -->
     </dependencies>
 
-    <packaging>jar</packaging>
     <build>
-        <finalName>demo</finalName>
+        <finalName>${project.name}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
         </plugins>
 
@@ -53,5 +69,4 @@
             </resource>
         </resources>
     </build>
-
 </project>

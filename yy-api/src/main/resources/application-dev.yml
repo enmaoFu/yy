@@ -6,14 +6,21 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
-    driver-class-name: com.mysql.cj.jdbc.Driver
+
   servlet:
     multipart:
     max-file-size: 200MB
     max-request-size: 200MB
+
+  #字段为null时，也显示到json中
   jackson:
     serialization:
       write-null-map-values: true
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 #showSql
 logging:

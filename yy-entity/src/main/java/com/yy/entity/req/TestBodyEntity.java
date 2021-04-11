@@ -1,4 +1,4 @@
-package com.yy.req;
+package com.yy.entity.req;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

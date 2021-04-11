@@ -1,4 +1,4 @@
-package com.yy;
+package com.yy.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 import javax.servlet.MultipartConfigElement;
 
-@ComponentScan(value="com")
 @SpringBootApplication
 public class SpringbootProjectApplication {
 	public static void main(String[] args) {

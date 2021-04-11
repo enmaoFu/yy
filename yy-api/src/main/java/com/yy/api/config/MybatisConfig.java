@@ -1,11 +1,11 @@
-package com.yy.config;
+package com.yy.api.config;
 
-import org.apache.ibatis.annotations.Mapper;
+import org.mapstruct.Mapper;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan("com.yy.mapper")
+@MapperScan("com.yy.api.mapper")
 public class MybatisConfig {
 
     /**

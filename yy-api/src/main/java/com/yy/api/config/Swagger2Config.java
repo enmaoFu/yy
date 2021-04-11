@@ -1,4 +1,4 @@
-package com.yy.config;
+package com.yy.api.config;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;

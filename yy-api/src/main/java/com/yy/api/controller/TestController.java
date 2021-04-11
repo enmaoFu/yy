@@ -1,14 +1,19 @@
-package com.yy.controller;
+package com.yy.api.controller;
 
-import com.yy.Result;
-import com.yy.resp.TestEntity;
-import com.yy.resp.TestReceiveBody;
-import com.yy.service.TestService;
-import com.yy.req.TestBodyEntity;
-import io.swagger.annotations.*;
+import com.yy.api.service.TestService;
+import com.yy.entity.req.TestBodyEntity;
+import com.yy.entity.resp.TestEntity;
+import com.yy.entity.resp.TestReceiveBody;
+import com.yy.util.result.Result;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import static com.yy.ResultCode.SUCCESS_MSG;
+
+import static com.yy.util.result.ResultCode.SUCCESS_MSG;
+
 
 @RestController
 @RequestMapping("/test")

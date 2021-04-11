@@ -1,4 +1,4 @@
-package com.yy;
+package com.yy.util.result;
 
 public interface ResultCode {
 

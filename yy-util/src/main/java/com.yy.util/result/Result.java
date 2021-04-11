@@ -1,10 +1,10 @@
-package com.yy;
+package com.yy.util.result;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-import static com.yy.ResultCode.FAILURE;
-import static com.yy.ResultCode.SUCCESS;
+import static com.yy.util.result.ResultCode.FAILURE;
+import static com.yy.util.result.ResultCode.SUCCESS;
 
 @ApiModel(value = "返回说明")
 public class Result<T> {
