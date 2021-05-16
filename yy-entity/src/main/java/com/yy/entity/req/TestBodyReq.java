@@ -10,9 +10,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @ApiModel(value = "测试body实体")
-public class TestBodyEntity {
+public class TestBodyReq {
     @ApiModelProperty(value = "token", required = true)
     private String token;
     @ApiModelProperty(value = "页码")
-    private int pager;
+    private Integer pager;
 }

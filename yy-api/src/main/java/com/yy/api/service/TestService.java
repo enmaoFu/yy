@@ -2,10 +2,10 @@ package com.yy.api.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yy.entity.resp.TestEntity;
+import com.yy.entity.resp.TestResp;
 
-public interface TestService extends IService<TestEntity> {
+public interface TestService extends IService<TestResp> {
 
-    TestEntity test(Integer id);
+    TestResp test(Integer id);
 
 }

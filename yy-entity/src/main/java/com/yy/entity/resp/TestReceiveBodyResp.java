@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @ApiModel(value = "测试返回实体类信息2")
-public class TestReceiveBody {
+public class TestReceiveBodyResp {
 
     @ApiModelProperty(value = "id")
     private Integer id;

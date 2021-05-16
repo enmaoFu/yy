@@ -1,11 +1,11 @@
 package com.yy.api.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yy.entity.resp.TestEntity;
+import com.yy.entity.resp.TestResp;
 import org.apache.ibatis.annotations.Param;
 
-public interface TestMapper extends BaseMapper<TestEntity> {
+public interface TestMapper extends BaseMapper<TestResp> {
 
-    TestEntity testQueryId(@Param("id") Integer id);
+    TestResp testQueryId(@Param("id") Integer id);
 
 }

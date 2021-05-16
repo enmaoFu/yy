@@ -9,7 +9,7 @@ import lombok.Data;
 @TableName("test")
 @Data
 @ApiModel(value = "测试返回实体类信息1")
-public class TestEntity extends Model<TestEntity> {
+public class TestResp extends Model<TestResp> {
 
     @ApiModelProperty(value = "测试返回实体类ID")
     private Integer id;
