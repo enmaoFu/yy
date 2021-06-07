@@ -1,0 +1,7 @@
+接口URL：
+1.get方式：http://localhost:9099/test/queryId?id=1
+2.post方式：http://localhost:9099/test/testReceiveBody、参数：{"token":"asdasdas","pager":1}
+
+swagger2URL：
+1.http://localhost:9099/swagger-ui.html
+2.http://localhost:9099/doc.html#/home
