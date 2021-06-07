@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HH_epidemic_prevention.iml" filepath="$PROJECT_DIR$/HH_epidemic_prevention.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yy-api/yy-api.iml" filepath="$PROJECT_DIR$/yy-api/yy-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yy-entity/yy-entity.iml" filepath="$PROJECT_DIR$/yy-entity/yy-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yy-util/yy-util.iml" filepath="$PROJECT_DIR$/yy-util/yy-util.iml" />
+    </modules>
+  </component>
+</project>
